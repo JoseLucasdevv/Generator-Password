@@ -17,6 +17,12 @@ export function resultGenerator() {
         inpuCapitalLetter.checked,
         inputAddSymbols.checked
       );
+      if (!result) {
+        div.innerHTML = "choose your options for generate u password!";
+        div.classList.add("msgError");
+        return;
+      }
+      div.classList.remove("msgError");
       div.innerHTML = result;
     }
   });
