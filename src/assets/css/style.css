@@ -78,20 +78,21 @@ form button:hover {
   width: 100%;
 }
 .btn {
+  font-size: 25px;
   height: 50px;
   width: 100%;
   outline: 0;
   border-radius: 5px;
   cursor: pointer;
   border: 1px solid var(--color-black);
-  transition: ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .btn:hover {
   background-color: var(--color-black);
   color: var(--white-color);
-
   transition-duration: 1s;
-  transition-delay: 1ms;
+  transform: translateY(3px);
+  transform: translate3d(0px, 10px, 0px);
 }
 .msgError {
   color: var(--color-error);
