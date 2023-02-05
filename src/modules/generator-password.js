@@ -18,12 +18,14 @@ export function resultGenerator() {
         inputAddSymbols.checked
       );
       if (!result) {
-        div.innerHTML = "choose your options for generate u password!";
+        div.innerText = "choose your options for generate u password!";
+        div.classList.remove("msgSucess");
         div.classList.add("msgError");
         return;
       }
       div.classList.remove("msgError");
-      div.innerHTML = result;
+      div.classList.add("msgSucess");
+      div.innerText = result;
     }
   });
 }

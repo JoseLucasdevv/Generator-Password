@@ -94,6 +94,17 @@ form button:hover {
   transform: translateY(3px);
   transform: translate3d(0px, 10px, 0px);
 }
+.result-password {
+  display: flex;
+  letter-spacing: 1px;
+  text-align: center;
+  justify-content: center;
+}
 .msgError {
-  color: var(--color-error);
+  color: var(--white-color);
+  background-color: var(--color-error);
+}
+.msgSucess {
+  color: var(--white-color);
+  background-color: var(--color-black);
 }
